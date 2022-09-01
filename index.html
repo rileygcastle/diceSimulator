@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice Roller</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Playfair+Display&family=Raleway:wght@200&family=Tangerine&display=swap" rel="stylesheet">
-<link href="./styles.css" rel="stylesheet">
-</head>
-<body>
-    <h1 class="title">
-        Dice Simulator
-    </h1>
-    <p class="instructions">
-        Click the button below to roll the 6-sided die!
-    </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Playfair+Display&family=Raleway:wght@200&family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="title">Dice Simulator</h1>
+    <p class="instructions">Click the button below to roll the 6-sided die!</p>
 
     <div class="scene">
-        <div class="cube">
-            <div class="cube-face cube-face-1">
-                <p>1</p>
-            </div>
-            <div class="cube-face cube-face-2"><p>2</p></div>
-            <div class="cube-face cube-face-3"><p>3</p></div>
-            <div class="cube-face cube-face-4"><p>4</p></div>
-            <div class="cube-face cube-face-5"><p>5</p></div>
-            <div class="cube-face cube-face-6"><p>6</p></div>
+      <div class="cube">
+        <div class="cube-face cube-face-1">
+          <div class="dot"></div>
         </div>
+        <div class="cube-face cube-face-2">
+          <div class="left">
+            <div class="dot"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="cube-face cube-face-3">
+          <div class="left">
+            <div class="dot"></div>
+          </div>
+          <div class="center">
+            <div class="dot"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="cube-face cube-face-4">
+          <div class="horizontal-space-between">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="horizontal-space-between">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="cube-face cube-face-5">
+          <div class="horizontal-space-between">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="center">
+            <div class="dot"></div>
+          </div>
+          <div class="horizontal-space-between">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="cube-face cube-face-6">
+          <div class="horizontal-space-between">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="horizontal-space-between">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="horizontal-space-between">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="btn-container">
-    <button class="roll-btn">ROLL</button>
-</div>
-<script src="./dice.js"></script>
-</body>
+      <button class="roll-btn">ROLL</button>
+    </div>
+    <script src="./dice.js"></script>
+  </body>
 </html>

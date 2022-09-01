@@ -41,7 +41,7 @@ html {
     -4px -6px 6px rgba(104, 204, 251, 0.245);
   margin-left: 50%;
   transform: translateX(-50%);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -49,7 +49,7 @@ html {
   transform: translateX(-50%) translateY(-2px) scale(1.08);
   box-shadow: 5px 7px 10px rgba(255, 50, 50, 0.106),
     -5px -7px 10px rgba(104, 204, 251, 0.131);
-    background-color:rgb(45, 45, 45);
+  background-color: rgb(45, 45, 45);
 }
 
 .scene {
@@ -90,21 +90,39 @@ html {
 
 .cube-face-1 {
   transform: rotateY(0deg) translateZ(200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cube-face-2 {
   transform: rotateY(180deg) translateZ(200px);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .cube-face-3 {
   transform: rotateY(90deg) translateZ(200px);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .cube-face-4 {
   transform: rotateY(-90deg) translateZ(200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .cube-face-5 {
   transform: rotateX(90deg) translateZ(200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .cube-face-6 {
   transform: rotateX(-90deg) translateZ(200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cube.show-1 {
@@ -128,4 +146,28 @@ html {
 
 label {
   margin-right: 10px;
+}
+
+.dot {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin: 40px;
+}
+
+.right {
+  justify-content: end;
+  width: 100%;
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  display: flex;
+}
+
+.horizontal-space-between {
+  display: flex;
+  justify-content: space-between;
 }
