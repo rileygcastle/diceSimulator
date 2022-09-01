@@ -1,8 +1,6 @@
-var cube = document.querySelector(".cube");
-var rollBtn = document.querySelector(".roll-btn");
-var currentClass = "";
-
-// const diceAudio = new Audio('./dice.mp3')
+const cube = document.querySelector(".cube");
+const rollBtn = document.querySelector(".roll-btn");
+let currentClass = "";
 
 function getRandomInt(min, max) {
   min = Math.ceil(1);
@@ -12,10 +10,8 @@ function getRandomInt(min, max) {
 
 function rollDice() {
   const diceAudio = new Audio("./dice.mp3");
-  var randNum = getRandomInt(1, 7);
-  console.log(randNum);
-  var showClass = "show-" + randNum;
-  console.log(showClass);
+  const randNum = getRandomInt(1, 7);
+  const showClass = "show-" + randNum;
   if (currentClass) {
     cube.classList.remove(currentClass);
   }
@@ -23,5 +19,5 @@ function rollDice() {
   currentClass = showClass;
   diceAudio.play();
 }
-rollDice();
+
 rollBtn.addEventListener("click", rollDice);
