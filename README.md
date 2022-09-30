@@ -2,7 +2,10 @@
 
 ## A dice-simulator project made with JavaScript 
 
+
 I built this project to work on JavaScript DOM manipulation and CSS flexbox.
+
+![A sceen-capture of the app gameplay.](./screenshot.png) 
 
 To view the live site click [here](https://rileygcastle.github.io/diceSimulator)!
 
